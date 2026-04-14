@@ -27,6 +27,12 @@
 }
 
 /* ---- Logo ---- */
+.logosContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -36,20 +42,20 @@
 }
 
 .logoImage {
-  height: 128px;
+  height: 56px;
   width: auto;
   object-fit: contain;
   opacity: 0.9;
-  transition: opacity var(--transition), height var(--transition);
+  transition: opacity var(--transition);
   border-radius: 8px;
-}
-
-.header.scrolled .logoImage {
-  height: 56px;
 }
 
 .logoImage:hover {
   opacity: 1;
+}
+
+.jhFilter {
+  filter: brightness(0) invert(1);
 }
 
 /* ---- Desktop nav ---- */

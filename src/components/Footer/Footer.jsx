@@ -43,7 +43,7 @@ export default function Footer() {
           <div className={styles.brand}>
             <div className={styles.logosContainer}>
               <Link to="/" className={styles.logo}>
-                <img src="/logo.webp" alt="Bonito & Pantanal Sul" className={styles.logoImage} />
+                <img src="/logo-2.webp" alt="Bonito & Pantanal Sul" className={styles.logoImage} />
               </Link>
               <img src="/jh-marketing-turistico.png" alt="JH Marketing Turístico" className={`${styles.logoImage} ${styles.jhFilter}`} />
             </div>

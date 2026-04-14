@@ -34,10 +34,13 @@ export default function Header() {
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.inner}>
-        {/* Logo */}
-        <Link to="/" className={styles.logo} aria-label="Bonito Inesquecível Oficial — Home">
-          <img src={scrolled ? "/logo-2.webp" : "/logo.webp"} alt="Bonito & Pantanal Sul" className={styles.logoImage} />
-        </Link>
+        {/* Logos */}
+        <div className={styles.logosContainer}>
+          <Link to="/" className={styles.logo} aria-label="Bonito Inesquecível Oficial — Home">
+            <img src="/logo-2.webp" alt="Bonito & Pantanal Sul" className={styles.logoImage} />
+          </Link>
+          <img src="/jh-marketing-turistico.png" alt="JH Marketing Turístico" className={`${styles.logoImage} ${styles.jhFilter}`} />
+        </div>
 
         {/* Nav desktop */}
         <nav className={styles.nav} aria-label="Navegação principal">
